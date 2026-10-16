@@ -1,0 +1,50 @@
+{
+  "drugs": {
+    "BATCH-AMX-2026": {
+      "name": "Amoxicillin",
+      "dosage": "500mg",
+      "expiry_date": "2027-12-31",
+      "status": "Authentic",
+      "recalled": false,
+      "notes": "Safe for bacterial infections. Check for penicillin allergies."
+    },
+    "BATCH-PCM-2025": {
+      "name": "Paracetamol",
+      "dosage": "650mg",
+      "expiry_date": "2026-11-30",
+      "status": "Authentic",
+      "recalled": false,
+      "notes": "Standard antipyretic/analgesic."
+    },
+    "BATCH-FAKE-009": {
+      "name": "Amoxicillin",
+      "dosage": "500mg",
+      "expiry_date": "2024-01-01",
+      "status": "Counterfeit Alert",
+      "recalled": true,
+      "notes": "WARNING: Reported sub-standard batch with high contamination risk."
+    }
+  },
+  "inventory": {
+    "Amoxicillin": {
+      "stock_count": 120,
+      "location": "Cabinet A-2",
+      "reorder_level": 30
+    },
+    "Paracetamol": {
+      "stock_count": 15,
+      "location": "Cabinet B-1",
+      "reorder_level": 50
+    },
+    "ORS": {
+      "stock_count": 200,
+      "location": "Cabinet C-4",
+      "reorder_level": 40
+    }
+  },
+  "vital_thresholds": {
+    "spo2_danger_below": 92,
+    "heart_rate_high_above": 110,
+    "temp_f_fever_above": 100.4
+  }
+}
